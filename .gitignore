@@ -1,0 +1,7 @@
+data/
+.DS_Store
+.ipynb_checkpoints
+.sav
+*/.ipynb_checkpoints/*
+code/*.sav
+

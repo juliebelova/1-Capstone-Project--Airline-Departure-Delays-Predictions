@@ -1,0 +1,58 @@
+Code:       Description
+
+*****************************
+DEP_DELAY_GROUP
+*****************************
+-2:  Delay < -15 minutes
+-1:  Delay between -15 and -1 minutes
+0:   Delay between 0 and 14 minutes
+1:   Delay between 15 to 29 minutes
+2:   Delay between 30 to 44 minutes
+3:   Delay between 45 to 59 minutes
+4:   Delay between 60 to 74 minutes
+5:   Delay between 75 to 89 minutes
+6:   Delay between 90 to 104 minutes
+7:   Delay between 105 to 119 minutes
+8:   Delay between 120 to 134 minutes
+9:   Delay between 135 to 149 minutes
+10:  Delay between 150 to 164 minutes
+11:  Delay between 165 to 179 minutes
+12:  Delay >= 180 minutes
+
+*****************************
+L_DEPARRBLK
+*****************************
+0001-0559:  12:00AM to 5:59AM
+0600-0659:  6:00AM to 6:59AM
+0700-0759:  7:00AM to 7:59AM
+0800-0859:  8:00AM to 8:59AM
+0900-0959:  9:00AM to 9:59AM
+1000-1059:  10:00AM to 10:59AM
+1100-1159:  11:00AM to 11:59AM
+1200-1259:  12:00PM to 12:59PM
+1300-1359:  1:00PM to 1:59PM
+1400-1459:  2:00PM to 2:59PM
+1500-1559:  3:00PM to 3:59PM
+1600-1659:  4:00PM to 4:59PM
+1700-1759:  5:00PM to 5:59PM
+1800-1859:  6:00PM to 6:59PM
+1900-1959:  7:00PM to 7:59PM
+2000-2059:  8:00PM to 8:59PM
+2100-2159:  9:00PM to 9:59PM
+2200-2259:  10:00PM to 10:59PM
+2300-2359:  11:00PM to 11:59PM
+
+*****************************
+L_DISTANCE_GROUP_250
+*****************************
+1:  Less Than 250 Miles
+2:  250-499 Miles
+3:  500-749 Miles
+4:  750-999 Miles
+5:  1000-1249 Miles
+6:  1250-1499 Miles
+7:  1500-1749 Miles
+8:  1750-1999 Miles
+9:  2000-2249 Miles
+10:  2250-2499 Miles
+11:  2500 Miles and Greater

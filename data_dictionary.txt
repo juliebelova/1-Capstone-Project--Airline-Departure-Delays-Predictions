@@ -1,0 +1,183 @@
+Source: https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236
+
+SYS_FIELD_NAME:		FIELD_DESC
+
+###############################################################
+TIME PERIOD:
+###############################################################
+YEAR: 		(int)Year
+QUARTER: 	(int)Quarter (1-4)
+MONTH: 		(int)Month
+DAY_OF_MONTH: 	(int)Day of Month
+DAY_OF_WEEK: 	(int)Day of Week
+FL_DATE: 	(obj)Flight Date (yyyymmdd)
+
+###############################################################
+AIRLINE:
+###############################################################
+OP_UNIQUE_CARRIER:	(obj)Unique Carrier Code. When the same code has been used by multiple carriers, a numeric suffix is used for earlier users, for example, PA, PA(1), PA(2). Use this field for analysis across a range of years.
+
+OP_CARRIER_AIRLINE_ID:	(int)An identification number assigned by US DOT to identify a unique airline (carrier). A unique airline (carrier) is defined as one holding and reporting under the same DOT certificate regardless of its Code, Name, or holding company/corporation.
+
+OP_CARRIER:		(obj)Code assigned by IATA and commonly used to identify a carrier. As the same code may have been assigned to different carriers over time, the code is not always unique. For analysis, use the Unique Carrier Code.
+
+TAIL_NUM:		(obj)Tail Number
+
+OP_CARRIER_FL_NUM:	(int)Flight Number
+
+###############################################################
+ORIGIN:
+###############################################################
+ORIGIN_AIRPORT_ID:	(int)Origin Airport, Airport ID. An identification number assigned by US DOT to identify a unique airport.  Use this field for airport analysis across a range of years because an airport can change its airport code and airport codes can be reused.
+
+ORIGIN_AIRPORT_SEQ_ID:	(int)Origin Airport, Airport Sequence ID. An identification number assigned by US DOT to identify a unique airport at a given point of time.  Airport attributes, such as airport name or coordinates, may change over time.
+
+ORIGIN_CITY_MARKET_ID:	(int)Origin Airport, City Market ID. City Market ID is an identification number assigned by US DOT to identify a city market.  Use this field to consolidate airports serving the same city market.
+
+ORIGIN:			(obj)Origin Airport
+
+ORIGIN_CITY_NAME:	(obj)Origin Airport, City Name
+
+ORIGIN_STATE_ABR:	(obj)Origin Airport, State Code
+
+ORIGIN_STATE_FIPS:	(int)Origin Airport, State Fips
+
+ORIGIN_STATE_NM:	(obj)Origin Airport, State Name
+
+ORIGIN_WAC:		(int)Origin Airport, World Area Code
+
+###############################################################
+DESTINATION:
+###############################################################
+DEST_AIRPORT_ID:	(int)Destination Airport, Airport ID. An identification number assigned by US DOT to identify a unique airport.  Use this field for airport analysis across a range of years because an airport can change its airport code and airport codes can be reused.
+
+DEST_AIRPORT_SEQ_ID:	(int)Destination Airport, Airport Sequence ID. An identification number assigned by US DOT to identify a unique airport at a given point of time.  Airport attributes, such as airport name or coordinates, may change over time.
+
+DEST_CITY_MARKET_ID:	(int)Destination Airport, City Market ID. City Market ID is an identification number assigned by US DOT to identify a city market.  Use this field to consolidate airports serving the same city market.
+
+DEST:			(obj)Destination Airport
+
+DEST_CITY_NAME:		(obj)Destination Airport, City Name
+
+DEST_STATE_ABR:		(obj)Destination Airport, State Code
+
+DEST_STATE_FIPS:	(int)Destination Airport, State Fips
+
+DEST_STATE_NM:		(obj)Destination Airport, State Name
+
+DEST_WAC:		(int)Destination Airport, World Area Code
+
+###############################################################
+DEPARTURE PERFORMANCE:
+###############################################################
+CRS_DEP_TIME:		(int)CRS Departure Time (local time: hhmm)
+
+DEP_TIME:		(float)Actual Departure Time (local time: hhmm)
+
+DEP_DELAY:		(float)Difference in minutes between scheduled and actual departure time. Early departures show negative numbers.
+
+DEP_DELAY_NEW:		(float)Difference in minutes between scheduled and actual departure time. Early departures set to 0.
+
+DEP_DEL15:		(float)Departure Delay Indicator, 15 Minutes or More (1=Yes)
+
+DEP_DELAY_GROUP:	(float)Departure Delay intervals, every (15 minutes from <-15 to >180)
+
+DEP_TIME_BLK:		(obj)CRS Departure Time Block, Hourly Intervals
+
+TAXI_OUT:		(float)Taxi Out Time, in Minutes
+
+WHEELS_OFF:		(float)Wheels Off Time (local time: hhmm)
+
+###############################################################
+ARRIVAL PERFORMANCE:
+###############################################################
+WHEELS_ON:		(float)Wheels On Time (local time: hhmm)
+
+TAXI_IN:		(float)Taxi In Time, in Minutes
+
+CRS_ARR_TIME:		(int)CRS Arrival Time (local time: hhmm)
+
+ARR_TIME:		(float)Actual Arrival Time (local time: hhmm)
+
+ARR_DELAY:		(float)Difference in minutes between scheduled and actual arrival time. Early arrivals show negative numbers.
+
+ARR_DELAY_NEW:		(float)Difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.
+
+ARR_DEL15:		(float)Arrival Delay Indicator, 15 Minutes or More (1=Yes)
+
+ARR_DELAY_GROUP:	(float)Arrival Delay intervals, every (15-minutes from <-15 to >180)
+
+ARR_TIME_BLK:		(obj)CRS Arrival Time Block, Hourly Intervals
+
+###############################################################
+CANCELLATIONS AND DIVERSIONS:
+###############################################################
+CANCELLED:		(float)Cancelled Flight Indicator (1=Yes)
+
+DIVERTED:		(float)Diverted Flight Indicator (1=Yes)
+
+###############################################################
+FLIGHT SUMMARIES:
+###############################################################
+CRS_ELAPSED_TIME:	(float)CRS Elapsed Time of Flight, in Minutes
+
+ACTUAL_ELAPSED_TIME:	(float)Elapsed Time of Flight, in Minutes
+
+AIR_TIME:		(float)Flight Time, in Minutes
+
+FLIGHTS:		(float)Number of Flights
+
+DISTANCE:		(float)Distance between airports (miles)
+
+DISTANCE_GROUP:		(int)Distance Intervals, every 250 Miles, for Flight Segment
+
+###############################################################
+CAUSE OF DELAY:
+###############################################################
+CARRIER_DELAY:		(float)Carrier Delay, in Minutes
+
+WEATHER_DELAY:		(float)Weather Delay, in Minutes
+
+NAS_DELAY:		(float)National Air System Delay, in Minutes
+
+SECURITY_DELAY:		(float)Security Delay, in Minutes
+
+LATE_AIRCRAFT_DELAY:	(float)Late Aircraft Delay, in Minutes
+
+###############################################################
+GATE RETURN INFORMATION AT ORIGIN AIRPORT:
+###############################################################
+FIRST_DEP_TIME:		(float)First Gate Departure Time at Origin Airport
+
+TOTAL_ADD_GTIME:	(float)Total Ground Time Away from Gate for Gate Return or Cancelled Flight
+
+LONGEST_ADD_GTIME:	(float)Longest Time Away from Gate for Gate Return or Cancelled Flight
+
+###############################################################
+DIVIRTED AIRPORT INFORMATION:
+###############################################################
+DIV_AIRPORT_LANDINGS:	(float)Number of Diverted Airport Landings
+
+DIV_REACHED_DEST:	(float)Diverted Flight Reaching Scheduled Destination Indicator (1=Yes)
+
+DIV_ACTUAL_ELAPSED_TIME:(float)Elapsed Time of Diverted Flight Reaching Scheduled Destination, in Minutes.  The ActualElapsedTime column remains NULL for all diverted flights."
+
+DIV_ARR_DELAY:		(float)Difference in minutes between scheduled and actual arrival time for a diverted flight reaching scheduled destination.  The ArrDelay column remains NULL for all diverted flights.
+
+DIV_DISTANCE:		(float)Distance between scheduled destination and final diverted airport (miles).  Value will be 0 for diverted flight reaching scheduled destination.
+
+DIV1_AIRPORT:		(obj)Diverted Airport Code1
+
+DIV1_AIRPORT_ID:	(float)Airport ID of Diverted Airport 1. Airport ID is a Unique Key for an Airport
+
+DIV1_AIRPORT_SEQ_ID:	(float)Airport Sequence ID of Diverted Airport 1. Unique Key for Time Specific Information for an Airport
+
+DIV1_WHEELS_ON:		(float)Wheels On Time (local time: hhmm) at Diverted Airport Code1
+
+DIV1_TOTAL_GTIME:	(float)Total Ground Time Away from Gate at Diverted Airport Code1
+
+DIV1_LONGEST_GTIME:	(float)Longest Ground Time Away from Gate at Diverted Airport Code1
+
+DIV1_WHEELS_OFF:	(float)Wheels Off Time (local time: hhmm) at Diverted Airport Code1
+
+DIV1_TAIL_NUM:		(obj)Aircraft Tail Number for Diverted Airport Code1
