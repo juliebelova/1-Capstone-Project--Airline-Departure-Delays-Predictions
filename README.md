@@ -46,18 +46,17 @@ Scores of our models are as following:
 
 |   Classifier   | Train Score | Test Score |  |
 |------------|------------|-------------|------------|
-|      Base Line      | 0.18  | 0.18       |            |
+|      Base Line      | 0.180  | 0.180       |            |
 | Logistic Regression | 0.493| 0.492        |        |
-|  **Random Forest**  |**0.711** | **0.568**        |       |
-|    AdaBoost   |0.485 | 0.483      |      |
-|    Feed Forward Neural Network   | 0.530 | 0.531     |       |
+|  **Random Forest**  |**0.583** | **0.556**        |       |
+|    AdaBoost   |0.512 | 0.510      |      |
+|    Feed Forward Neural Network   | 0.552 | 0.552     |       |
 
-All the models we have trained outperformed the Base Line model. Random Forest had the highest Train and Test average precision score. The scores were 0.711 and 0.5682 on the Train and Test respectfully. Even though our Random Forest model is overfit it performed better than other models we still think there is a scope of improvement. We need to tune it by reducing maximum features and maximum depth of each tree.
+All the models we have trained outperformed the Base Line model. Random Forest had the highest Train and Test average precision score. The scores were 0.583 and 0.556 on the Train and Test respectfully. 
 
-Features that mostly help in identifying whether the departure flight be delayed or not, are prior flight departure delays, scheduled departure hour and scheduled arrival hour, along with prior departure hour and prior flight count for the day. 
+When we calculated feature importance on our Random Forest, the important features were prior delay, scheduled air time, destination, origin and prior origin of the flight.  
 
-We noticed that our model has limitations. Since we have collected local flights for one year 2018, it only works for local flights and local carriers and it does not take into consideration any economic factors. For example, corona virus outbreak  lead to most flights to be canceled. Other factors that might change over time are (1) airport architectural restructure, that leads to a better internal airport workflow and minimizes departure delays, (2) updating the fleet with newer airplane models that have higher performance rate and require less maintenance.
-
+We noticed that our model has limitations. Since we have collected local flights for one year 2018, it only works for local flights and local carriers and it does not take in consideration any economic factors. For example, corona virus outbreak lead to most flights to be canceled. Other factors that might change over time are (1) airports architectural restructure, that leads to a better internal airport workflow and minimizes departure delays, (2) updating the fleet with newer airplane models that have higher performance rate and require less maintenance.
 
 ## Next Steps
 According to the [Federal Aviation Administration](https://www.sciencedirect.com/science/article/pii/S2212012218300753), most of the delays in winter are due to surface winds, low ceiling and low visibility, whereas during summer the majority of delays is attributable to convective weather, low ceiling and associated low visibility (Federal Aviation Administration, 2017).  
